@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>checkField Example</title>
+	</head>
+	<body>
+		<label for="username">Username<span class="required">*</span></label>
+		<div id="username_check" class="check-field">
+			<input id="username" name="username" type="text" placeholder="Username">
+			<i class="check-error fa fa-info-circle"></i>
+		</div>
+		
+		<script type="text/javascript">
+			var checkField = new checkField("#username", {
+				url: 'checkfield-serverside.php',
+				name: 'username',
+				msg: 'This user name is not availabe'
+			});
+		</script>
+	</body>
+</html>
