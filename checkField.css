@@ -1,0 +1,26 @@
+.check-field
+{
+    position: relative;
+}
+.check-field > i
+{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 15px;
+    color: #e00;
+    cursor: help;
+    display: none;
+}
+.check-field.check-true > input
+{
+    border-color: #0e0;
+}
+.check-field.check-false > input
+{
+    border-color: #e00;
+}
+.check-field.check-false > i
+{
+    display: block;
+}
